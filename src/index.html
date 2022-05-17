@@ -4,17 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="flex flex-col items-center w-full">
-  <div class="w-full bg-anton h-96">
+  <script src="main.js" defer></script>
+  <script>
+    tailwind.config = {
+      content: ["./src/**/*.{html,js}"],
+      theme: {
+        extend: {
+          backgroundImage: {
+            "hero-img": "url('/public/bg.jpg')",
+          },
+          colors: {
+            anton: "#b38bb8",
+          },
+        },
+      },
+      plugins: [],
+    }
+  </script>
 
-    <nav class="flex items-center justify-between flex-wrap text-white p-6 w-full lg:w-[1000px]">
-      <div class="flex items-center flex-shrink-0 mr-6">
-        <img src="/public/sprinkler-symbol.png" class="h-12"/>
-        <span class="font-semibold text-xl tracking-tight ">Sprinkler</span>
+</head>
+<body class="items-center w-full">
+  <div class="w-full bg-slate-500 h-[780px]">
+    <nav class="flex flex-col lg:flex-row lg:items-center justify-between text-white p-6 lg:w-[1000px]">
+      <div class="flex items-center mr-6">
+        <img src="/public/sprinkler-symbol.png" class="h-12 mr-6"/>
+        <span class="font-semibold text-xl ">Sprinkler</span>
       </div>
-      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class="text-sm lg:flex-grow">
+      <div class="">
+        <div class="text-lg lg:space-x-12">
           <a href="#responsive-header" class="block lg:inline-block lg:mt-0 hover:text-white">
             Service
           </a>
@@ -27,6 +44,20 @@
         </div>
       </div>
     </nav>
+    <div class="flex space-x-20 justify-center items-center mt-32">
+      <div class="flex flex-col w-72 justify-center text-white">
+        <div class="w-full text-3xl font-bold">
+          Skräddarsyditt digitala självförsvar
+        </div>
+        <div class="w-full">
+          Få det levererat direkt genom bredbandsutttaget. Inga uppdateringar, inga sega uppstarter. Skyddet bara finns där, utan att det märks. 
+        </div>
+        <div class="w-full bg-amber-300">
+          asd
+        </div>
+      </div>
+      <img src="/public/sprinkler-symbol.png" class="h-72 mr-6"/>
+    </div>
 
   </div>
   <main class="flex justify-center w-full lg:w-[1000px]">
@@ -65,4 +96,3 @@
     </div>
 </body>
 </html>
-<script src="main.js"></script>
