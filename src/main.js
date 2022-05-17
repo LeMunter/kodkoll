@@ -1,2 +1,7 @@
-const div = document.querySelector("#test");
-console.log("non-wp suger");
+const setFooterYear = function () {
+  const div = document.querySelector("#copyright");
+  const d = new Date();
+  div.textContent = "Sprinkler " + d.getFullYear()
+}
+
+setFooterYear()
