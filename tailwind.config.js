@@ -5,7 +5,9 @@ module.exports = {
       backgroundImage: {
         "hero-img": "url('/public/bg.jpg')",
       },
-      colors: {},
+      colors: {
+        anton: "#b38bb8",
+      },
     },
   },
   plugins: [],
