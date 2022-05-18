@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+  @apply lg:mt-0 link-hover my-2;
+}
+
+.link-hover {
+  @apply hover:opacity-50 duration-200;
+}
+
+.hero-button {
+  @apply font-semibold py-2 px-4 rounded-full w-52 button-hover h-12;
+}
+
+.hero {
+  @apply bg-gradient-to-b from-gray-900 to-gray-600;
+}
+
+.button-hover {
+  @apply hover:opacity-50 duration-200;
+}
+
+.icons {
+  @apply text-8xl text-brand-white;
+}
+
+.circle {
+  @apply grid content-center h-36 w-36 bg-brand-blue rounded-full text-center m-10;
+}
