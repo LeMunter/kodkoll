@@ -15,9 +15,20 @@ const setServicesContent = (index, title, content) => {
   contentElm.textContent = content;
 };
 
-for (const [i, service] of data.services.entries()) {
-  setServicesContent(i, title, content);
-}
+const setAboutTitleAndContent = () => {
+  const aboutTitle = document.querySelector("#aboutTitle");
+  const aboutContent = document.querySelector("#aboutContent");
+  aboutTitle.textContent = data.about.title;
+  aboutContent.textContent = data.about.content;
+};
 
-setFooterYear();
-setServicesContent();
+const main = () => {
+  for (const [i, service] of data.services.entries()) {
+    setServicesContent(i, service.title, service.content);
+  }
+
+  setFooterYear();
+  setAboutTitleAndContent();
+};
+
+main();
