@@ -1,4 +1,5 @@
 import "./main.css";
+import data from "./data.json" assert { type: "json" };
 
 const setFooterYear = function () {
   const div = document.querySelector("#copyright");
@@ -9,6 +10,7 @@ const setFooterYear = function () {
 const setServicesContent = () => {
   const div = document.querySelector("#service-1");
   div.childNodes;
+  console.log(data);
   console.log(div.childNodes);
 };
 
