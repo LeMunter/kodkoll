@@ -7,12 +7,17 @@ const setFooterYear = function () {
   div.textContent = "© Sprinkler " + d.getFullYear();
 };
 
-const setServicesContent = () => {
-  const div = document.querySelector("#service-1");
-  div.childNodes;
-  console.log(data);
-  console.log(div.childNodes);
+const setServicesContent = (index, title, content) => {
+  const div = document.querySelector(`#service-${index}`);
+  const titleElm = div.querySelector("h3");
+  const contentElm = div.querySelector("p");
+  titleElm.textContent = title;
+  contentElm.textContent = content;
 };
+
+for (const [i, service] of data.services.entries()) {
+  setServicesContent(i, title, content);
+}
 
 setFooterYear();
 setServicesContent();
