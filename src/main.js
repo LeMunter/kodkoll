@@ -14,5 +14,13 @@ const setServicesContent = () => {
   console.log(div.childNodes);
 };
 
+const setAboutTitleAndContent = () => {
+  const aboutTitle = document.querySelector("#aboutTitle");
+  const aboutContent = document.querySelector("#aboutContent");
+  aboutTitle.textContent = data.about.title
+  aboutContent.textContent = data.about.content
+};
+
 setFooterYear();
 setServicesContent();
+setAboutTitleAndContent();
