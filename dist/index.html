@@ -1,11 +1,13 @@
 <!doctype html>
-<html lang="sv">
+<html lang="sv" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sprinkler</title>
+  <link rel="icon" href="/favicon.ico">
+  <title>Sprinkler | Digital Self Defense</title>
   <script src="main.js" defer></script>
   <link href="main.css" rel="stylesheet">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body class="flex flex-col items-center w-full">
@@ -13,34 +15,32 @@
     <div class="h-[780px] w-full xl:max-w-screen-2xl">
       <nav class="flex flex-col sm:flex-row lg:items-center justify-between p-6">
         <div class="flex items-center mr-6">
-          <img src="/assets/sprinkler-symbol.png" class="h-12 mr-6"/>
+          <img src="/assets/logo.svg" class="h-12 mr-6"/>
           <a href="/" class="font-semibold text-xl ">Sprinkler</span>
         </div>
         <div class="mt-5 text-center">
           <div class="text-lg space-x-12">
             <a href="#services" class="nav-link">
-              Service
+              Tjänster
             </a>
             <a href="#about" class="nav-link">
-              About
+              Om oss
             </a>
             <a href="#contact" class="nav-link">
-              Contact
+              Kontakt
             </a>
           </div>
         </div>
       </nav>
       <div class="flex flex-col-reverse xl:flex-row w-full space-x-20 justify-center items-center px-5 mt-20">
         <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-1/3 justify-center">
-          <div class="text-4xl font-bold">
-            Skräddarsy ditt digitala självförsvar
+          <div id="hero-title" class="text-4xl font-bold">
           </div>
-          <div class="mt-2">
-            Få det levererat direkt genom bredbandsutttaget. Inga uppdateringar, inga sega uppstarter. Skyddet bara finns där, utan att det märks. 
+          <div id="hero-content" class="mt-2">
           </div>
-          <div class="flex gap-5 mt-5">
-            <button class="text-brand-black hero-button bg-brand-gray">Contact us</button>
-            <button class="hero-button bg-brand-blue">Our services</button>
+          <div class="flex gap-5 mt-5 text-center">
+            <a href="#contact" class="text-brand-black hero-button bg-brand-gray">Kontakta oss</a>
+            <a href="#services" class="hero-button bg-brand-blue">Tjänster</a>
           </div>
         </div>
         <img src="/assets/spinkler-logo-white.svg" class=" w-2/4 lg:w-1/3 my-10 hidden md:flex mt-0"/>
@@ -84,27 +84,34 @@
         </div>
       </div>
   </main>
-  <div id="about" class="bg-brand-gray w-full flex justify-center px-5 pt-20 pb-20">
-    <div class="sm:w-3/4 md:w-2/3 xl:w-1/3 justify-center">
-      <div id="aboutTitle" class="text-3xl font-semibold text-center">
-      </div>
-      <div id="aboutContent" class="mt-2">
-      </div>
+  <div id="about" class="silver-gradient w-full flex justify-center items-center px-5 pt-20 pb-20 gap-5">
+    <div class="sm:w-3/4 md:w-2/3 xl:w-1/3 justify-center text-center">
+      <div id="about-title" class="text-3xl font-semibold text-center"></div>
+      <div id="about-content" class="mt-2 w-2/3 mx-auto"></div>
+    </div>
+    <img src="assets/sec.svg" class="hidden md:flex md:w-1/3 xl:w-1/4 justify-center" alt="Image with lock"/>
+  </div>
+  <div id="contact" class="bg-brand-white w-full flex justify-center items-center px-5 pt-20 pb-20 gap-5">
+    <img src="assets/mail.svg" class="hidden md:flex md:w-1/3 xl:w-1/4" alt="Image with lock"/>
+    <div class="sm:w-3/4 md:w-2/3 xl:w-1/3 block text-center">
+      <div id="contact-title" class="text-3xl font-semibold text-center"></div>
+      <div id="contact-content" class="mt-2 mb-10 w-2/3 mx-auto"></div>
+      <a href="" class="text-brand-white hero-button bg-brand-blue text-center email">Maila oss</a>
     </div>
   </div>
-  <div class="bg-brand-white w-full px-5 h-60 flex flex-col justify-center">
+  <!-- <div class="bg-brand-white w-full px-5 h-60 flex flex-col justify-center">
     <div class="flex justify-around">
       <div class="flex flex-col w-full justify-center">
         <div class="flex justify-around gap-5">
           <h3 class="text-3xl font-semibold">Contact</h3>
-          <button class="text-brand-white hero-button bg-brand-blue">Maila oss</button>
+          <a href="" class="text-brand-white hero-button bg-brand-blue text-center email">Maila oss</a>
         </div>
       </div>
     </div>
-  </div>
-  <div id="contact" class="bg-brand-gray w-full px-5 h-60 flex flex-col justify-center">
+  </div> -->
+  <div class=" w-full px-5 h-40 flex flex-col justify-center text-white bg-gradient-to-t gradient">
     <div class="flex justify-around">
-      <ul class="md:w-32 lg:w-52">
+      <!-- <ul class="md:w-32 lg:w-52">
         <li>Sprinkler</li>
         <li>Lorem</li>
         <li>ipsum dolor sit</li>
@@ -115,7 +122,7 @@
         <li>Loren</li>
         <li>ipsum dolor sit</li>
         <li>Contact mail</li>
-      </ul>
+      </ul> -->
     </div>
     <div class="flex justify-center font-bold">
       <div id="copyright" class=" md:w-full lg:w-96 flex justify-center">
@@ -123,7 +130,7 @@
       </div>
     </div>
     <div class="flex justify-center items-center">
-      Created by Kodkollektivet Kalmar<img class="h-14" src="../assets/kodkollektivet-logo.svg" />
+      Created by Kodkollektivet Kalmar<img class="h-14" src="assets/kodkollektivet-logo.svg" />
     </div>
 </body>
 </html>

@@ -9,17 +9,36 @@ const setFooterYear = function () {
 
 const setServicesContent = (index, title, content) => {
   const div = document.querySelector(`#service-${index}`);
-  const titleElm = div.querySelector("h3");
-  const contentElm = div.querySelector("p");
-  titleElm.textContent = title;
-  contentElm.textContent = content;
+  const titleElmt = div.querySelector("h3");
+  const contentElmt = div.querySelector("p");
+  titleElmt.textContent = title;
+  contentElmt.textContent = content;
 };
 
-const setAboutTitleAndContent = () => {
-  const aboutTitle = document.querySelector("#aboutTitle");
-  const aboutContent = document.querySelector("#aboutContent");
-  aboutTitle.textContent = data.about.title;
-  aboutContent.textContent = data.about.content;
+const setAboutData = () => {
+  setContent("#about-title", data.about.title);
+  setContent("#about-content", data.about.content);
+};
+
+const setHeroData = () => {
+  setContent("#hero-title", data.hero.title);
+  setContent("#hero-content", data.hero.content);
+};
+
+const setContactData = () => {
+  setContent("#contact-title", data.contact.title);
+  setContent("#contact-content", data.contact.content);
+  setEmail(".email", data.contact.email);
+};
+
+const setContent = (id, content) => {
+  const elmt = document.querySelector(id);
+  elmt.textContent = content;
+};
+
+const setEmail = (id, email) => {
+  const elmt = document.querySelector(id);
+  elmt.href = `mailto:${email}`;
 };
 
 const main = () => {
@@ -27,8 +46,11 @@ const main = () => {
     setServicesContent(i, service.title, service.content);
   }
 
+  setHeroData();
+
   setFooterYear();
-  setAboutTitleAndContent();
+  setAboutData();
+  setContactData();
 };
 
 main();
