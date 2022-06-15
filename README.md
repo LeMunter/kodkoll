@@ -3,7 +3,7 @@
 ## Install
 
 ```
-npm run i
+npm i
 ```
 
 ## Production
