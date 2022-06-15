@@ -37,8 +37,11 @@ const setContent = (id, content) => {
 };
 
 const setEmail = (id, email) => {
-  const elmt = document.querySelector(id);
-  elmt.href = `mailto:${email}`;
+  const elmtArr = document.querySelectorAll(id);
+  for (const elmt of elmtArr) {
+    if (!elmt.textContent) elmt.textContent = email;
+    elmt.href = `mailto:${email}`;
+  }
 };
 
 const main = () => {
