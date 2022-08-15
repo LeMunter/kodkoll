@@ -5,7 +5,7 @@
   },
   "services": [
     {
-      "title": "Hejej",
+      "title": "Lorem",
       "content": "Lorem ipsum dolor sit amet, adasd adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
@@ -28,6 +28,6 @@
   "contact": {
     "title": "Kontakt",
     "content": "Kontakta oss gärna om du har några frågor! Vi försöker alltid svara så snabbt vi kan.",
-    "email": "test@test.com"
+    "email": "demo@demo.demo"
   }
 }
