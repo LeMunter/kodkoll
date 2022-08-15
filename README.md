@@ -1,5 +1,7 @@
 # Sprinkler
 
+Byt ut exempeltexter i "src/data.json"
+
 ## Install
 
 ```
