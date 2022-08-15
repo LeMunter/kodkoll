@@ -1,21 +1,27 @@
 # Sprinkler
 
-Byt ut exempeltexter i "src/data.json"
+## Requirements
 
-## Install
+- node v16.15.1 eller högre
+
+- npm 8.11.0 eller högre
+
+## 1 - Lägg till data
+
+Byt ut exempeltexter i `"src/data.json"` samt adressen i elementet `<link rel="canonical" href="https://demo.demo" />` under `"dist/index.html"`
+
+## 2 - Installera
 
 ```
 npm i
 ```
 
-## Production
+## 3 - Bygg
 
 ```
 npm run build
 ```
 
-## Develop
+## 4 - Hosta
 
-```
-npm run dev
-```
+Publicera allt innehåll i mappen `dist/`
